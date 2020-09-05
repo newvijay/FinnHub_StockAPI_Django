@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% autoescape off %}
+        {{ fig }}
+    {{ plot_div }}
+    {% endautoescape %}
+    {{ response }}
+    <br>
+    {{ response1 }}
+    <br>
+    {% for i in response_new %}
+    <p>{{ i.headline }}</p>
+    {% endfor %}
+    <br>
+    {{ financial }}
+</body>
+</html>
